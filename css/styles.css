@@ -1,0 +1,26 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+span.code {
+    background-color: #DEDEDE;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8em;
+}
+
+nav#navbar {
+    background-color: #DEDEDE;
+}
+
+main#main-doc {
+    background-color: #FAFAFA;
+}
+
+header {
+    font-size: 32px;
+}
+
+
+@media only screen and (min-width: 64em) {
+
+}
