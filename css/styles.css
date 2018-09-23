@@ -1,26 +1,67 @@
+body {
+    margin: 0;
+}
+
 * {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-span.code {
+code {
     background-color: #DEDEDE;
     font-family: 'IBM Plex Mono', monospace;
     font-size: 0.8em;
+    padding: 0 10px;
 }
 
 nav#navbar {
     background-color: #DEDEDE;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
+nav#navbar header {
+    padding: 16px;
+    font-size: 2em;
+}
+
+nav#navbar a {
+    padding: 8px 16px;
+    display: block;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
 }
 
 main#main-doc {
+    margin-left: 25%;
     background-color: #FAFAFA;
+    padding: 16px;
 }
 
-header {
-    font-size: 32px;
+main#main-doc section header {
+    font-size: 1.5em;
 }
 
+section#reference ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 
-@media only screen and (min-width: 64em) {
+a:visited {
+    color: black;
+}
 
+@media only screen and (max-width: 64em) {
+    nav#navbar {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+
+    main#main-doc {
+        margin-left: 0;
 }
